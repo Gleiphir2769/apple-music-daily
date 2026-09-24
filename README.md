@@ -21,6 +21,10 @@ bash scripts/build.sh
 open build/MusicKitProbe.app
 ```
 
+每次运行构建脚本都会先删除仓库根目录的 `build/`，再重新生成图标、Swift 编译缓存和应用。
+
+应用图标源文件为 `src/Resources/AppIcon.png`。构建时会自动生成 16–1024 像素的图标资源并打包为 `.icns`；替换源图片后重新构建即可更新图标。
+
 首次使用在应用内完成音乐资料库授权、网页登录及 Apple Music 连接，然后选择歌曲范围并点击“一键推荐”。具体行为和限制见 [应用说明](docs/usage.md)。
 
 应用仍处于原型阶段，网页自动化依赖页面结构；真实登录会话中的完整流程仍需验证。
