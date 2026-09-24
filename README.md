@@ -10,6 +10,7 @@ macOS 每日音乐发现原型：读取 Apple Music 资料库中的近期收藏�
 - `examples/`：候选歌曲示例；中国区可用性尚未验证。
 - `docs/`：详细使用说明。
 - `build/`：本地构建产物和编译缓存，由构建命令生成，不提交。
+- `dist/`：DMG 安装镜像，不提交，也不会被构建脚本清空。
 - `outputs/`：本地导出数据和生成的推荐结果，不提交。
 
 ## 构建与使用
@@ -18,7 +19,7 @@ macOS 每日音乐发现原型：读取 Apple Music 资料库中的近期收藏�
 
 ```bash
 bash scripts/build.sh
-open build/MusicKitProbe.app
+open build/AppleMusicDaily.app
 ```
 
 每次运行构建脚本都会先删除仓库根目录的 `build/`，再重新生成图标、Swift 编译缓存和应用。
@@ -28,6 +29,18 @@ open build/MusicKitProbe.app
 首次使用在应用内完成音乐资料库授权、网页登录及 Apple Music 连接，然后选择歌曲范围并点击“一键推荐”。具体行为和限制见 [应用说明](docs/usage.md)。
 
 应用仍处于原型阶段，网页自动化依赖页面结构；真实登录会话中的完整流程仍需验证。
+
+## 打包 DMG
+
+编译完成后运行（仅打包现有 App，不重新编译）：
+
+```bash
+bash scripts/package-dmg.sh
+```
+
+输出为 `dist/AppleMusicDaily.dmg`。打开镜像后，将 `AppleMusicDaily.app` 拖到 `Applications` 即可安装。脚本会检查应用签名、校验 DMG，并在成功后替换同名旧镜像。
+
+当前构建使用本地临时签名，打包不包含 Developer ID 签名和 Apple 公证；在其他 Mac 上分发时，系统可能阻止直接打开。
 
 ## 验证
 

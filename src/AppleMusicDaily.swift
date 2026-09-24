@@ -73,7 +73,7 @@ final class Probe: ObservableObject {
             guard let resources = response["data"] as? [[String: Any]],
                   let resource = resources.first, resource["type"] as? String == "songs",
                   let resolved = resource["id"] as? String else {
-                throw NSError(domain: "MusicKitProbe.NoCatalogMatch", code: 1,
+                throw NSError(domain: "AppleMusicDaily.NoCatalogMatch", code: 1,
                               userInfo: [NSLocalizedDescriptionKey: "该资料库歌曲没有返回可用的曲库歌曲 ID。"])
             }
             catalogID = resolved
@@ -100,7 +100,7 @@ final class Probe: ObservableObject {
             ])
             guard let entries = created["data"] as? [[String: Any]],
                   let createdID = entries.first?["id"] as? String else {
-                throw NSError(domain: "MusicKitProbe.MissingPlaylistID", code: 2,
+                throw NSError(domain: "AppleMusicDaily.MissingPlaylistID", code: 2,
                               userInfo: [NSLocalizedDescriptionKey: "写入响应未包含歌单 ID；请检查音乐 App，不要重复创建。"])
             }
             playlistID = createdID
@@ -192,7 +192,7 @@ final class Probe: ObservableObject {
 }
 
 @main
-struct MusicKitProbeApp: App {
+struct AppleMusicDailyApp: App {
     var body: some Scene {
         WindowGroup("每日音乐发现") { DailyRecommendationView() }
     }

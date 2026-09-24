@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
-<key>CFBundleIdentifier</key><string>local.codex.musickit-probe</string>
-<key>CFBundleName</key><string>MusicKitProbe</string>
-<key>CFBundleExecutable</key><string>MusicKitProbe</string>
+<key>CFBundleIdentifier</key><string>local.codex.apple-music-daily</string>
+<key>CFBundleName</key><string>AppleMusicDaily</string>
+<key>CFBundleExecutable</key><string>AppleMusicDaily</string>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>CFBundleIconFile</key><string>AppIcon</string>
 <key>CFBundleVersion</key><string>1</string>

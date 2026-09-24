@@ -79,5 +79,6 @@ recent-songs.json
 
 # Generated files (including artifacts from the original layout)
 /build/
+/dist/
 /outputs/
 /work/

@@ -1,6 +1,6 @@
 # 每日音乐发现 · 整合版
 
-退出旧版，再打开 MusicKitProbe.app。默认界面不再展示历史验证页。
+退出旧版，再打开 AppleMusicDaily.app。默认界面不再展示历史验证页。
 
 ## 首次连接
 
@@ -27,7 +27,7 @@ Swift 编译及签名通过；JavaScript 语法通过。Mock DOM 测试覆盖已
 
 本次自动发送、自动展开与仅卡片布局尚未在用户已登录的实时 ChatGPT 页面完成验证。未申请电脑控制权限。发生问题可通过“更多 → 保存诊断”导出状态、iframe 标题与域名；不包含 Cookie、令牌或对话正文。
 
-在仓库根目录构建：bash scripts/build.sh；产物：build/MusicKitProbe.app（macOS 14+，Apple Silicon，已安装 Xcode）。
+在仓库根目录构建：bash scripts/build.sh；产物：build/AppleMusicDaily.app（macOS 14+，Apple Silicon，已安装 Xcode）。
 
 ## 输入适配修复（v2）
 

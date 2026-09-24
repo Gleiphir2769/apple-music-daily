@@ -213,8 +213,8 @@ s=s[:s.index('struct DailyRecommendationView: View {')]+'''struct DailyRecommend
 '''
 p.write_text(s)
 # Main app becomes one focused flow; preserve probe source separately for diagnostics.
-p=Path('src/Probe.swift');s=p.read_text();s=s[:s.index('@main')]+'''@main
-struct MusicKitProbeApp: App {
+p=Path('src/AppleMusicDaily.swift');s=p.read_text();s=s[:s.index('@main')]+'''@main
+struct AppleMusicDailyApp: App {
     var body: some Scene {
         WindowGroup("每日音乐发现") { DailyRecommendationView() }
     }
