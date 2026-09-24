@@ -1,5 +1,5 @@
 from pathlib import Path
-p=Path('outputs/musickit-probe/DailyRecommendation.swift')
+p=Path('src/DailyRecommendation.swift')
 s=p.read_text()
 s=s.replace('@Published var status = "选择范围后读取。资料库内容只会在你粘贴并发送给 ChatGPT 后传出。"','@Published var status = "首次使用请在账户连接中完成授权；之后点击一键推荐。"\n    @Published var workflow = false\n    @Published var fullPage = false\n    @Published var cardReady = false\n    @Published var connectionPanel = false\n    @Published var libraryAuthorized = MusicAuthorization.currentStatus == .authorized\n    private var generationTask: Task<Void, Never>?')
 s=s.replace('此页面不会申请新权限。','请在账户连接中点击授权。')
@@ -213,7 +213,7 @@ s=s[:s.index('struct DailyRecommendationView: View {')]+'''struct DailyRecommend
 '''
 p.write_text(s)
 # Main app becomes one focused flow; preserve probe source separately for diagnostics.
-p=Path('outputs/musickit-probe/Probe.swift');s=p.read_text();s=s[:s.index('@main')]+'''@main
+p=Path('src/Probe.swift');s=p.read_text();s=s[:s.index('@main')]+'''@main
 struct MusicKitProbeApp: App {
     var body: some Scene {
         WindowGroup("每日音乐发现") { DailyRecommendationView() }

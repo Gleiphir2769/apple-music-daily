@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
-const source=fs.readFileSync('outputs/musickit-probe/Resources/chat-adapter.js','utf8');
+const source=fs.readFileSync('src/Resources/chat-adapter.js','utf8');
 function fixture(options={}) {
  let clicks=0,frames=[],users=[],replies=[],pastes=0;
  class Element {

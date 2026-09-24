@@ -76,3 +76,8 @@ recent-songs.json
 .env
 .env.*
 !.env.example
+
+# Generated files (including artifacts from the original layout)
+/build/
+/outputs/
+/work/

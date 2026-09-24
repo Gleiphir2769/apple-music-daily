@@ -1,5 +1,5 @@
 from pathlib import Path
-p=Path('outputs/musickit-probe/WebExecutor.swift')
+p=Path('src/WebExecutor.swift')
 s=p.read_text().replace('尚未验证。请在下方','验证器 v2：收起网页使用遮罩，保留网页布局；不等同于后台运行。请在下方')
 s=s.replace('private var baselineDate: Date?', 'private var baselineDate: Date?\n    private var addSubmitted = false')
 s=s.replace("const label = e => (e.getAttribute('aria-label') || e.innerText || '').trim();\n          const available = e => !e.disabled && e.getAttribute('aria-hidden') !== 'true' && e.getClientRects().length > 0;\n          const buttons = root => [...root.querySelectorAll('button,[role=\"button\"]')].filter(available);", """const label = e => (e.getAttribute('aria-label') ||

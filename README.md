@@ -4,25 +4,24 @@ macOS 每日音乐发现原型：读取 Apple Music 资料库中的近期收藏�
 
 ## 目录
 
-- `outputs/musickit-probe/`：SwiftUI 应用源码、网页适配器、构建脚本及详细使用说明。
-- `outputs/musickit-probe/free_prototype.py`：离线处理资料库 JSON、生成推荐上下文与预览页面的 Python 原型。
-- `outputs/musickit-probe/verified-candidates.json`：候选歌曲示例；中国区可用性尚未验证。
-- `work/test-chat-adapter.cjs`：网页适配器的 Mock DOM 回归测试。
-- `work/test-recommendation.swift`：独立的请求格式验证脚本，包含请求生成逻辑副本，不替代应用集成测试。
-- `work/integrate_daily.py`、`work/fix_executor.py`：历史开发修改脚本，正常构建无需执行。
-
-保留现有目录结构以兼容构建和脚本路径。编译后的 `.app`、Swift 缓存、个人资料库导出及生成的推荐结果保留在本地，由 `.gitignore` 排除。
+- `src/`：SwiftUI 应用源码、Info.plist 和网页适配器资源。
+- `scripts/`：构建脚本与离线 Python 原型；`archive/` 保留历史修改脚本，正常构建无需执行。
+- `tests/`：网页适配器 Mock DOM 测试及独立的请求格式验证脚本（包含逻辑副本，不替代集成测试）。
+- `examples/`：候选歌曲示例；中国区可用性尚未验证。
+- `docs/`：详细使用说明。
+- `build/`：本地构建产物和编译缓存，由构建命令生成，不提交。
+- `outputs/`：本地导出数据和生成的推荐结果，不提交。
 
 ## 构建与使用
 
 需要 Apple Silicon Mac、macOS 14 或更新版本，以及 Xcode / Swift 工具链。
 
 ```bash
-bash outputs/musickit-probe/build.sh
-open outputs/musickit-probe/MusicKitProbe.app
+bash scripts/build.sh
+open build/MusicKitProbe.app
 ```
 
-首次使用在应用内完成音乐资料库授权、网页登录及 Apple Music 连接，然后选择歌曲范围并点击“一键推荐”。具体行为和限制见 [应用说明](outputs/musickit-probe/README.md)。
+首次使用在应用内完成音乐资料库授权、网页登录及 Apple Music 连接，然后选择歌曲范围并点击“一键推荐”。具体行为和限制见 [应用说明](docs/usage.md)。
 
 应用仍处于原型阶段，网页自动化依赖页面结构；真实登录会话中的完整流程仍需验证。
 
@@ -31,16 +30,16 @@ open outputs/musickit-probe/MusicKitProbe.app
 在仓库根目录运行（JavaScript 测试需要 Node.js）：
 
 ```bash
-node --check outputs/musickit-probe/Resources/chat-adapter.js
-node work/test-chat-adapter.cjs
+node --check src/Resources/chat-adapter.js
+node tests/test-chat-adapter.cjs
 ```
 
 使用自己的资料库导出验证请求格式：
 
 ```bash
-mkdir -p work/swift-cache
-xcrun swiftc -module-cache-path work/swift-cache work/test-recommendation.swift -o work/test-recommendation
-work/test-recommendation /path/to/recent-songs.json
+mkdir -p build/swift-cache
+xcrun swiftc -module-cache-path build/swift-cache tests/test-recommendation.swift -o build/test-recommendation
+build/test-recommendation /path/to/recent-songs.json
 ```
 
 ## 离线原型
@@ -48,7 +47,7 @@ work/test-recommendation /path/to/recent-songs.json
 需要 Python 3.10 或更新版本，无第三方依赖：
 
 ```bash
-python3 outputs/musickit-probe/free_prototype.py /path/to/recent-songs.json \
+python3 scripts/free_prototype.py /path/to/recent-songs.json \
   --limit 50 --out outputs/daily-music-demo
 ```
 
