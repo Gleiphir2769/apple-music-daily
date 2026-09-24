@@ -60,3 +60,19 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Local builds and caches
+.DS_Store
+*.app/
+__pycache__/
+*.py[cod]
+/work/swift-cache/
+/work/test-recommendation
+/work/check-executor-js.json
+
+# Personal library exports and generated recommendations
+/outputs/daily-music-demo/
+recent-songs.json
+.env
+.env.*
+!.env.example

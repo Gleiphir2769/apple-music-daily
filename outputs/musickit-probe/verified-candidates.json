@@ -1,0 +1,130 @@
+{
+  "source": "Apple Music connector; model curated and metadata checked",
+  "requestedStorefront": "cn",
+  "catalogStorefront": "us",
+  "storefrontAvailabilityVerified": false,
+  "tracks": [
+    {
+      "id": "436835926",
+      "type": "songs",
+      "title": "想自由",
+      "artist": "林宥嘉",
+      "album": "美妙生活",
+      "url": "https://music.apple.com/us/album/%E6%83%B3%E8%87%AA%E7%94%B1/436835744?i=436835926&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/df/25/f4df2536-f064-4668-a683-4941a4cc7834/mzaf_14530091779945561499.plus.aac.ep.m4a",
+      "reason": "从陈奕迅、莫文蔚的叙事情歌延伸，保留旋律和情绪表达。"
+    },
+    {
+      "id": "314255409",
+      "type": "songs",
+      "title": "迷宫",
+      "artist": "王若琳",
+      "album": "Start from Here",
+      "url": "https://music.apple.com/us/album/%E8%BF%B7%E5%AE%AE/314255024?i=314255409&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/2b/27/602b27a6-13fa-3a49-21f4-aaeb765111cb/mzaf_13714570388419903777.plus.aac.ep.m4a",
+      "reason": "衔接方大同、陶喆的温柔律动，换一种声线。"
+    },
+    {
+      "id": "1078914485",
+      "type": "songs",
+      "title": "Feather (feat. Cise Star & Akin)",
+      "artist": "Nujabes",
+      "album": "Modal Soul",
+      "url": "https://music.apple.com/us/album/feather-feat-cise-star-akin/1078914477?i=1078914485&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/2b/bc/d22bbc43-e22a-3f66-6949-bbbc67d22e7b/mzaf_12860889488150424411.plus.aac.ep.m4a",
+      "reason": "从2Pac和新收藏的A Tribe Called Quest延伸到爵士嘻哈。"
+    },
+    {
+      "id": "1444071423",
+      "type": "songs",
+      "title": "Come Close (feat. Mary J. Blige)",
+      "artist": "Common",
+      "album": "Electric Circus",
+      "url": "https://music.apple.com/us/album/come-close-feat-mary-j-blige/1444071085?i=1444071423&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/3d/61/c93d61a4-eac2-bbdc-21c7-856284a58195/mzaf_17801163687896536163.plus.aac.ep.m4a",
+      "reason": "兼顾经典说唱与温暖的R&B旋律。"
+    },
+    {
+      "id": "1611482688",
+      "type": "songs",
+      "title": "Matsuri",
+      "artist": "藤井风",
+      "album": "LOVE ALL SERVE ALL",
+      "url": "https://music.apple.com/us/album/matsuri/1611482396?i=1611482688&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/5b/93/225b9308-515a-fedd-737e-5853d9edceca/mzaf_10159822157672683196.plus.aac.ep.m4a",
+      "reason": "呼应已收藏的Feelin’ Go(o)d，延伸日语律动。"
+    },
+    {
+      "id": "1378512643",
+      "type": "songs",
+      "title": "Loop",
+      "artist": "SIRUP",
+      "album": "Loop - Single",
+      "url": "https://music.apple.com/us/album/loop/1378512636?i=1378512643&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/ea/57/61ea576b-3d13-0705-7f36-1d58cba4b282/mzaf_18097512441330106582.plus.aac.ep.m4a",
+      "reason": "结合华语R&B偏好与日语流行兴趣，尝试新的艺人。"
+    },
+    {
+      "id": "609187703",
+      "type": "songs",
+      "title": "Featherstone",
+      "artist": "The Paper Kites",
+      "album": "Woodland - EP",
+      "url": "https://music.apple.com/us/album/featherstone/609187370?i=609187703&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/56/14/b056141f-32e2-c1a9-7cc2-d37f4c5e51ea/mzaf_16042659967385643796.plus.aac.ep.m4a",
+      "reason": "呼应Welcome Home, Son的木吉他与和声氛围。"
+    },
+    {
+      "id": "1682357121",
+      "type": "songs",
+      "title": "From The Start",
+      "artist": "Laufey",
+      "album": "From The Start - Single",
+      "url": "https://music.apple.com/us/album/from-the-start/1682357010?i=1682357121&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_10440401179535948589.plus.aac.ep.m4a",
+      "reason": "以轻盈的爵士流行扩展你对旋律和人声的偏好。"
+    },
+    {
+      "id": "1617909669",
+      "type": "songs",
+      "title": "Comedy",
+      "artist": "星野源",
+      "album": "Comedy - Single",
+      "url": "https://music.apple.com/us/album/comedy/1617909668?i=1617909669&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/43/0b/d4430b24-7473-95c0-1f2c-41ae38f8b060/mzaf_3654621962613324295.plus.aac.ep.m4a",
+      "reason": "从imase、藤井风延伸到轻快的日语流行。"
+    },
+    {
+      "id": "1217977757",
+      "type": "songs",
+      "title": "Sweet",
+      "artist": "Cigarettes After Sex",
+      "album": "Cigarettes After Sex",
+      "url": "https://music.apple.com/us/album/sweet/1217977525?i=1217977757&l=zh-Hans-CN",
+      "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/56/4a/1f564a2c-ecbb-47ac-1aed-b171f48acfb8/mzaf_10767861521511988766.plus.aac.ep.m4a",
+      "reason": "呼应Nights与comethru中安静、带空间感的一面。"
+    }
+  ],
+  "rejected": [
+    {
+      "requested": "爱爱爱 — 方大同",
+      "returned": "爱在 — 方大同",
+      "reason": "different title"
+    },
+    {
+      "requested": "达尔文 — 蔡健雅",
+      "returned": "达尔文II 进化版 — 蔡健雅",
+      "reason": "different version"
+    },
+    {
+      "requested": "不可幸力 — Vaundy",
+      "returned": "music-videos resource",
+      "reason": "not an audio song"
+    },
+    {
+      "requested": "Best Part (feat. H.E.R.) — Daniel Caesar",
+      "returned": "Best Part (feat. Daniel Caesar) — H.E.R.",
+      "reason": "different credited artist/version"
+    }
+  ]
+}

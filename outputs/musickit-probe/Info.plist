@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>local.codex.musickit-probe</string>
+<key>CFBundleName</key><string>MusicKitProbe</string>
+<key>CFBundleExecutable</key><string>MusicKitProbe</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>LSMinimumSystemVersion</key><string>14.0</string>
+<key>NSAppleMusicUsageDescription</key><string>读取最近添加歌曲及添加时间；在你点击创建测试歌单时新增一个包含一首歌的播放列表。</string>
+</dict></plist>
